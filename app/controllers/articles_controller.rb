@@ -1,5 +1,4 @@
 class ArticlesController < ApplicationController
-  require 'sha3'
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
   def index

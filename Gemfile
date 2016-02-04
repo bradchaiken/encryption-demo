@@ -26,8 +26,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # For service objects
 gem "interactor", "~> 3.0"
 
-gem 'sha3'
-
 gem 'awesome_print'
 
 # Use ActiveModel has_secure_password
