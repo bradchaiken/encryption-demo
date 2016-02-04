@@ -8,3 +8,10 @@ All of the things.
 
 * The inspiration for this demo: http://vesavanska.com/2013/signing-and-encrypting-data-with-tools-built-in-to-rails/
 
+#####################################################################################################################
+
+* rails c
+* key = ActiveSupport::KeyGenerator.new('1234567890').generate_key('1234567890')
+* crypt = ActiveSupport::MessageEncryptor.new(key, digest: "SHA256")
+* encrypted_password = crypt.encrypt_and_sign('mydummypassword')
+* decrypted_password = crypt.decrypt_and_verify(encrypted_password)
