@@ -1,0 +1,10 @@
+== README
+
+All of the things.
+
+* http://api.rubyonrails.org/classes/ActiveSupport/MessageEncryptor.html
+
+* Another approach: https://github.com/johanns/sha3
+
+* The inspiration for this demo: http://vesavanska.com/2013/signing-and-encrypting-data-with-tools-built-in-to-rails/
+
