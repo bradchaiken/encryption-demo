@@ -1,6 +1,6 @@
 == README
 
-All of the things.
+This example will demonstrate how to use ActiveSupport::MessageEncryptor to encrypt / decrypt database attributes. A use case has also been implemented in this application which shows how this method can be used to password protect 'Article' posts. Though this implementation has been slimmed down and uses 'BasicAuth' for access validation, this example can be easily customized at the controller level to handle redirects, errors, messages etc.
 
 * http://api.rubyonrails.org/classes/ActiveSupport/MessageEncryptor.html
 
