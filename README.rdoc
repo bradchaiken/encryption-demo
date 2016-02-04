@@ -8,7 +8,7 @@ This example will demonstrate how to use ActiveSupport::MessageEncryptor to encr
 
 * The inspiration for this demo: http://vesavanska.com/2013/signing-and-encrypting-data-with-tools-built-in-to-rails/
 
-#####################################################################################################################
+###################################################################################
 
 * rails c
 * key = ActiveSupport::KeyGenerator.new('1234567890').generate_key('1234567890')
