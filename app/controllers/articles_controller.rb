@@ -42,8 +42,9 @@ class ArticlesController < ApplicationController
   def update
     # Decrypt old password
     key = ActiveSupport::KeyGenerator.new(Rails.application.secrets.password_digest_secret).generate_key(Rails.application.secrets.password_digest_salt)
-    crypt = ActiveSupport::MessageEncryptor.new(key)
+    crypt = ActiveSupport::MessageEncryptor.new(key, digest: "SHA384")
     decrypted_pass = crypt.decrypt_and_verify(@article.password_digest)
+
 
     # Compare the decrypted password with the params given.
     # If they are different, than we need to update the new password.
